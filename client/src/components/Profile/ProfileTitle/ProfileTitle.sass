@@ -1,0 +1,51 @@
+@import "../../../styles/variables.sass"
+
+@keyframes Btnzz
+    0%
+        opacity: 0
+    50%
+        opacity: 0
+    100%
+        opacity: 0.6
+
+.Profile
+    &TitleContainer
+        width: 70%
+        margin: auto
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+    h5
+        text-align: center
+        span 
+            color: $color2
+        @media screen and(max-width:670px)
+            margin: auto
+            margin-top: 70px
+            margin-bottom: 50px
+    &SettingsBtn
+        animation: Btnzz 1s
+        background: $colorText
+        opacity: 0.6
+        animation: Btnzz 1s
+        border-radius: 30px
+        color: $bg2
+        text-transform: uppercase
+        font-size: 0.8em
+        font-weight: 600
+        height: 30px
+        line-height: 30px
+        padding: 0 15px
+        &:hover 
+            transition: all .2s
+            opacity: 1
+        @media screen and(max-width:670px)
+            text-align: center
+            width: 150px
+            position: absolute
+            left: 0
+            right: 0
+            top: 180px
+            bottom: auto
+            margin: auto

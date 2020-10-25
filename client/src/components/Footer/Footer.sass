@@ -1,0 +1,57 @@
+@import "../../styles/variables.sass"
+
+footer 
+  flex: 0 0 auto
+  background: $bg
+  box-shadow: 1px -3px 9px -1px rgba(0,0,0,0.75)
+  min-width: 320px
+  height: 54px
+  width: 100%
+  z-index: 222
+  position: fixed
+  bottom: 0
+  padding: 0 50px
+  a 
+    color: $color2
+    &:hover 
+      transition: all 0.1s
+      color: $color2hover
+      svg 
+        color: $color2hover
+        fill: $color2hover
+  @media screen and(max-width:420px)
+    padding: 0 20px
+
+.FooterContainer
+  height: 54px
+  display: flex
+  flex-direction: row
+  align-items: center
+  
+
+.FooterLinkActions
+  a
+    font-weight: 600
+    padding: 0 15px
+    text-transform: uppercase
+    &:hover
+      color: $bg
+  @media screen and(max-width:440px)
+    display: none
+
+.FooterLinkPhone
+  margin-left: 20px
+  display: flex
+  align-items: center
+  position: relative
+  max-width: 150px
+  height: 25px
+  svg 
+    width: 25px
+    height: 25px
+  nobr
+      position: absolute
+      right: -118px
+      line-height: 25px
+  @media screen and(max-width:420px)
+    margin-left: 0

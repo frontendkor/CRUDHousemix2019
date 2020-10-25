@@ -1,0 +1,139 @@
+@import "../../styles/variables.sass"
+
+.CartEmpty
+    color: $colorText
+    text-align: center
+    font-size: 1.3em
+
+.CartImg
+    width: auto
+    height: 100px
+    @media screen and(max-width:780px)
+        margin: 25px 0
+
+.CartTitle
+    margin-left: 25px
+    @media screen and(max-width:780px)
+        margin-left: 0
+        margin-bottom: 25px
+    @media screen and(max-width:530px)
+        margin-bottom: 80px
+
+.CartAmountProduct
+    position: absolute
+    right: 100px
+    display: flex
+    flex-direction: row
+    .amount
+        padding: 0 15px
+        @media screen and(max-width:340px)
+            font-size: 0.9em
+    .btn-small
+        height: 20px
+        line-height: 20px
+        border-radius: 30px
+        @include Btn
+    @media screen and(max-width:780px)
+        left: 200px
+        top: 70px
+    @media screen and(max-width:530px)
+        top: auto
+        left: 25px
+        bottom: 25px
+        .amount
+            line-height: 20px
+            height: 20px
+
+
+
+.CartPrice
+    position: absolute
+    right: 25px
+    @media screen and(max-width:780px)
+        top: 70px
+        p
+            margin: 0
+    @media screen and(max-width:530px)
+        top: auto
+        bottom: 25px
+
+.CartItemRemove, .CartSum
+    position: absolute
+    right: 25px
+    top: 25px
+    cursor: pointer
+    background: none
+    border: none
+    color: $colorText
+
+.CartItemRemove
+    &:hover
+        transition: all .2s
+        color: $color2
+    &:focus
+        background: none
+        color: $color2
+
+.CartBtn
+    padding: 20px
+    @media screen and(max-width:530px)
+        &:first-child
+            margin-top: 40px
+    @media screen and(max-width:820px)
+        padding: 10px
+    a 
+        padding: 0 15px
+    // a 
+    //     @include Btn
+    //     text-transform: uppercase
+    //     border-radius: 30px
+    //     padding: 5px 15px
+    //     font-weight: 600
+    //     @media screen and(max-width:780px)
+    //         padding: 5px 0
+    //         display: inline-block
+    //         text-align: center
+    //         width: 200px
+    
+    
+
+.CartSum
+    top: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    .Sum
+        margin-left: 30px
+        @media screen and(max-width:780px)
+            margin-left: 15px
+    @media screen and(max-width:530px)
+        justify-content: center
+        top: 35px
+        bottom: auto
+        left: 0
+        right: 0
+        margin: auto
+
+
+//================================================================================
+.CartCollection
+    animation: TransformMin  0.5s
+    .collection
+        border: none 
+    .collection .collection-item
+        background-color: $bg2
+        color: $colorText
+        border-bottom: none
+        margin-bottom: 4px
+    .collection .collection-item.avatar, .collection-item
+        position: relative
+        padding: 25px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        @media screen and(max-width:780px)
+            flex-direction: column
+            align-items: flex-start
+        @media screen and(max-width:530px)
+            align-items: center
+    

@@ -1,0 +1,11 @@
+ [{
+     "id": "#123",
+     "login": "alex99",
+     "password": "qwerty99",
+     "receiverName": "Александр",
+     "phone": "375256345678",
+     "street": "Советская",
+     "houseNumber": "43а",
+     "apartmentNumber": "19",
+     "comment": ""
+ }]

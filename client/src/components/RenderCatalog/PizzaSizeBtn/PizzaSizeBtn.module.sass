@@ -1,0 +1,34 @@
+@import "~../../../styles/variables"
+
+.SizePizza
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.SizePizzaBtn
+    cursor: pointer
+    width: 45px
+    height: 45px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: rgba(255, 255, 255, 0.0)
+    border: none
+    border-radius: 30px
+    font-size: 0.9em
+    font-weight: 500
+    margin-right: 20px
+    margin-top: 15px
+    color: $colorText
+    &:hover
+      transition: all .3s
+      opacity: 0.9
+      color: $bg
+      background: $color2
+
+      
+
+button:focus, .active
+    background: rgba(255, 255, 255, 0.4)
+    color: $bg
+    outline: none

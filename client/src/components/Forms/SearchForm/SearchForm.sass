@@ -1,0 +1,24 @@
+.SearchForm
+    width: 70%
+    max-width: 640px
+    margin: auto
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 20px 15px
+    @media screen and(max-width:670px)
+        width: 90%
+    @media screen and(max-width:420px)
+        flex-direction: column
+    &BtnContainer
+        width: 30%
+        padding-left: 20px
+        button
+            margin-bottom: -4px
+        @media screen and(max-width:420px)
+            width: 100%
+            padding: 15px 0
+    &InputContainer
+        width: 70%
+        @media screen and(max-width:420px)
+            width: 100%

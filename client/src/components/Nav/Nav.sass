@@ -1,0 +1,103 @@
+@import "../../styles/variables.sass"
+
+.Nav
+    background: $bg
+    margin-bottom: 20px
+    padding: 0 30px
+    box-shadow: 1px 5px 9px -1px rgba(0,0,0,0.75)
+    ul 
+        background-color: $bg
+    @media screen and(max-width: 992px)
+        margin-top: 0
+        margin-bottom: 50px
+    a
+        color: $color1 
+        fill: $color1
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        margin: 0 5px
+        &:hover 
+            background: none
+            transition: all 0.3s
+            color: $color2hover
+            svg
+                fill: $color2hover
+        &.active
+            color: $color2
+            svg 
+                fill: $color2
+        @media screen and(max-width: 1140px)
+            margin: 0 2px
+            font-size: 0.8em
+        .ic
+            display: flex
+            width: 35px
+            height: 20px
+            position: relative
+        .Pizza,.Sushi,.Burger,.Drinks,.Delivery, .Profile, .Cart 
+            position: absolute
+            position: absolute
+            width: 100%
+        .Pizza
+            height: 20px
+            width: 35px
+            top: 19px
+            left: -3px
+        .Sushi
+            left: 6px
+            height: 29px
+            top: 17px
+        .Burger
+            height: 25px
+            top: 21px
+        .Drinks
+            height: 23px
+            top: 16px
+            left: -3px
+        .Delivery
+            height: 25px
+            top: 21px
+
+
+
+.Logo
+    margin: 0
+
+
+a.linkActions
+    display: none
+    @media screen and(max-width:992px)
+        display: flex
+        
+
+
+
+//=======================================================================
+
+.NavLogo
+    position: absolute
+    left: 70px
+
+.sidenav
+    background-color: $bg
+    a
+        &:hover
+            transition: all .1s
+            background-color: $bg2 
+        span
+            color: $color1
+        i 
+            position: relative
+            svg 
+                fill: $color1
+                position: absolute
+                width: 100%
+            .Pizza 
+                width: 33px
+                height: 20px
+                left: -10px
+                top: 12px
+
+.sidenav-trigger
+    margin: 0

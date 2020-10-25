@@ -1,0 +1,289 @@
+@import "../../styles/variables.sass"
+
+@mixin darken
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 666
+    background: rgba(15, 15, 15, 0.75)
+
+
+@keyframes centerAnim
+    0%
+        opacity: 0
+        transform: translateY(-100px)
+    100%
+        opacity: 1
+        transform: translateY(0px)
+
+.anim
+    animation: centerAnim 1300ms
+    
+.slide1
+    &Content
+        position: relative
+        margin-left: 200px
+        margin-top: 60px
+        z-index: 667
+        @media screen and(max-width:1050px)
+            margin-left: 170px
+        @media screen and(max-width:780px)
+            margin-left: 0
+    &Img
+        .Pizza
+            width: 450px 
+            height: auto 
+            position: absolute
+            top: 0
+            left: -200px 
+            @media screen and(max-width:1200px)
+                left: -270px
+            @media screen and(max-width:640px)
+                transform: scale(0.9)
+            @media screen and(max-width:480px)
+                transform: scale(0.7)
+        .Sushi
+            width: 450px 
+            height: auto 
+            position: absolute
+            top: 0 
+            transform: rotate(110deg)
+            right: 10px
+            @media screen and(max-width:1320px)
+                right: -50px
+            @media screen and(max-width:1200px)
+                right: -240px
+            @media screen and(max-width:640px)
+                transform: scale(0.7)
+        .Burger
+            width: 250px 
+            height: auto 
+            position: absolute
+            top: 0 
+            transform: rotate(110deg)
+            right: 450px
+            @media screen and(max-width:1320px)
+                right: 350px
+            @media screen and(max-width:1200px)
+                right: 200px
+            @media screen and(max-width:640px)
+                transform: scale(0.8)
+                right: 100px
+            @media screen and(max-width:400px)
+                top: -60px
+                right: 60px
+    &Logo, &SubTitle
+        text-align: left
+        padding-left: 70px
+        @media screen and(max-width:1120px)
+            padding-left: 30px
+        @media screen and(max-width:780px)
+            text-align: center
+            padding-left: 0
+    &Logo
+        color: $color1
+        font-size: 6.5em
+        line-height: 80px
+        @media screen and(max-width:780px)
+            position: absolute
+            top: 40px
+            left: 0
+            right: 0
+            margin: auto
+        @media screen and(max-width:370px)
+            font-size: 5.1em
+    &SubTitle
+        position: relative
+        margin-top: 50px
+        font-weight: 300
+        @media screen and(max-width:670px)
+            font-size: 1.1em
+            font-weight: 400
+            margin-top: 100px
+        span 
+            position: absolute
+            top: -30px
+            font-size: 0.8em
+            @media screen and(max-width:780px)
+                left: 0
+                right: 0
+                margin: auto
+                font-size: 1em
+                letter-spacing: 2px
+    .amper
+        color: $color1
+        font-size: 0.7em
+
+.darken1
+    @include darken
+    top: 0
+    background: rgba(15, 15, 15, 0.75)
+
+
+.slide2Img, .slide3Img
+    width: 100%
+    height: 100%
+    position: relative
+
+
+.slide2Text, .slide3Text
+    width: 400px 
+
+
+.slide2Title, .slide3Title
+    color: $color2
+
+
+.slide2Btn, .slide3Btn
+    @include Btn
+    display: block
+    width: 150px
+    text-align: center
+    text-transform: uppercase
+    padding: 5px 20px
+    margin-top: 30px
+
+
+
+.slide2
+    &Content
+        margin-left: 130px
+        @media screen and(max-width:920px)
+            margin-left: 60px
+        @media screen and(max-width:520px)
+            margin: 0
+            text-align: center
+    &Img
+        .Set2 
+            position: absolute
+            right: 130px
+            width: 350px
+            height: auto
+            @media screen and(max-width:920px)
+                right: -130px
+                transform: rotate(45deg)
+        .Sprite
+            position: absolute
+            right: 570px
+            width: 100px
+            height: 350px
+            transform: rotate(-45deg)
+            @media screen and(max-width:920px)
+                transform: rotate(-35deg)
+                right: 230px
+                top: 0
+    &Text 
+        nobr 
+            color: $color2
+        @media screen and(max-width:1200px)
+            font-weight: 500
+        @media screen and(max-width:520px)
+            width: 100%
+            text-align: center
+            padding: 0 50px
+            nobr
+                display: block
+                width: 100%
+        @media screen and(max-width:390px)
+            font-size: 1.2em
+            letter-spacing: 1px
+    &Btn
+        @media screen and(max-width:520px)
+            margin: auto
+            margin-top: 30px
+    
+
+.darken2
+    @media screen and(max-width:1230px)
+        @include darken
+
+
+.slide3
+    &Content 
+        margin-right: 130px
+        @media screen and(max-width:680px)
+            margin-right: 0
+            text-align: center
+    &Title 
+        @media screen and(max-width:480px)
+            padding: 0 30px
+    &Text 
+        margin: 0 0 0 auto
+        @media screen and(max-width:680px)
+            width: 100%
+            font-weight: 400
+            margin: auto
+            margin-top: 40px
+            text-align: center
+            padding: 0 50px
+        @media screen and(max-width:680px)
+            margin-top: 10px
+    &Img
+        @media screen and(max-width:680px)
+            width: 100%
+            margin: auto
+            position: relative
+        .Pizza1, .Pizza2, .Pizza3
+            width: 290px
+            height: 290px
+            position: absolute
+            top: 50px
+        .Pizza1
+            left: 100px
+            @media screen and(max-width:680px)
+                left: 0
+            @media screen and(max-width:450px)
+                left: -70px
+        .Pizza2
+            left: 270px
+            @media screen and(max-width:1300px)
+                left: 200px
+            @media screen and(max-width:680px)
+                left: 0
+                right: 0
+                margin: auto
+        .Pizza3
+            left: 450px
+            @media screen and(max-width:1300px)
+                left: 300px
+            @media screen and(max-width:680px)
+                left: auto
+                right: 0
+            @media screen and(max-width:450px)
+                right: -70px
+            
+    &Btn 
+        margin: 30px 0 0 auto
+        @media screen and(max-width:680px)
+            margin: auto
+            margin-top: 70px
+        @media screen and(max-width:680px)
+            margin-top: 40px
+
+.darken3
+    @media screen and(max-width:1130px)
+        @include darken
+
+
+
+
+
+
+//======================================================================
+
+ul.slider,.slides
+    background-color: $bg 
+
+
+ul.indicators
+    top: 400px
+    z-index: 99
+    li.indicator-item.active
+        background-color: $color2 
+
+.caption 
+    z-index: 777
+    width: 100% 
+
+.slider .slides li .caption 
+    left: 0

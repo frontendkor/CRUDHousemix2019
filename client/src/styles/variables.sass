@@ -1,0 +1,73 @@
+$bg: #0f0f0f
+$color1: #fff
+$color2: #ffa100
+$color3: #ff6600
+$color2hover: #ffb638
+
+$bg2: #0d0d0d
+$colorText: #b5b5b5
+$error: $color3
+$modalBg: rgba(0, 0, 0, 0.8)
+$formPreloaderBg: rgba(13, 13, 13, 0.8)
+
+@keyframes Opasity
+    0%
+        opacity: 0
+    50% 
+        opacity: 0.5
+    100%
+        opacity: 1
+
+@keyframes Transform
+    0%
+        transform: scale(0.5)
+    100%
+        transform: scale(1)
+
+@keyframes TransformMin
+    0%
+        opacity: 0.1
+        transform: scale(0.9)
+    100%
+        opacity: 1
+        transform: scale(1)
+
+// @keyframes Rotate
+//     0%
+//         transform: rotate(0deg)
+  
+//     100%
+//         transform: rotate(360deg)
+
+
+@mixin Btn 
+    background: $color2
+    border-radius: 30px
+    color: $bg
+    font-weight: 600
+    &:hover
+        transition: all 0.1s
+        background: $color2hover
+    &:focus
+        background: $color2
+
+@mixin Form
+    margin: auto
+    margin-bottom: 70px
+    margin-top: 70px
+    width: 70%
+    position: relative
+    border-radius: 3px
+    @media screen and(max-width:480px)
+        width: 85%
+    h5 
+        width: 100%
+        text-align: center
+        margin-bottom: 70px
+    label
+        font-size: 1.1em
+        color: $color2
+        margin: 0
+        width: 100%
+        text-align: left
+    

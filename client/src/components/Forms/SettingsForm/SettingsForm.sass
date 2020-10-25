@@ -1,0 +1,23 @@
+@import "../../../styles/variables.sass"
+
+.SettingsForm
+    @include Form
+    animation: TransformMin  0.5s
+    .label
+        color: $color2
+    .SettingsFormBtns
+        display: flex
+        @media screen and(max-width:540px)
+            flex-direction: column
+            align-items: center
+        button
+            width: 200px
+            margin-right: 20px
+            @media screen and(max-width:540px)
+                margin-right: 0
+        a 
+            width: 120px
+            @media screen and(max-width:540px)
+                margin-top: 20px
+
+        

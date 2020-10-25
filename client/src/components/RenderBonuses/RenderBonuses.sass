@@ -1,0 +1,50 @@
+@import "../../styles/variables.sass"
+
+.bonuses
+    animation: Transform  0.5s 
+    .collection-item
+        background: $bg2
+        margin-bottom: 5px
+        display: flex
+        justify-content: space-between
+        h6 
+            font-weight: 600
+            color: $color2
+        @media screen and(max-width:580px)
+            flex-direction: column
+    &Spiner
+        text-align: center
+        .spinner-layer
+            border-color: $color2
+    &Text
+        flex: 1
+        padding: 0 20px
+        @media screen and(max-width:580px)
+            text-align: center
+    &Date 
+        width: 120px
+        text-align: center
+        p 
+            font-size: 0.8em
+        @media screen and(max-width:580px)
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: baseline
+            p 
+                font-size: 1em
+                margin-left: 10px
+    &Img
+        width: 150px
+        height: 150px
+        display: flex
+        align-items: center
+        justify-content: center
+        img 
+            border-radius: 3px
+            width: auto
+            height: auto
+            max-height: 100%
+            max-width: 100%
+        @media screen and(max-width:580px)
+            margin: auto

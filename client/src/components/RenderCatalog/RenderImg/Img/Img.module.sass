@@ -1,0 +1,31 @@
+@import "~../../../../styles/variables.sass"
+
+
+// ==============================
+    
+.ImageLoader 
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 0 5px
+  padding-top: 15px
+  position: relative
+  height: 255px
+  overflow: hidden
+  background: $bg2
+  .err
+    height: 255px
+    min-height: 255px
+    display: flex
+    align-items: center
+    justify-content: center
+  img 
+    width: auto 
+    max-width: 99%
+    height: auto
+    max-height: 250px
+    animation: imgs 1000ms
+    position: absolute
+    @media screen and(max-width:420px)
+      width: auto
+  
